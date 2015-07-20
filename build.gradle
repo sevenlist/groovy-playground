@@ -1,0 +1,13 @@
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.4'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.5'
+}
